@@ -1,0 +1,41 @@
+C:\Users\stuart_\Desktop\PongWar V3\PongWar V2\PongWar\PongWar\PongWar\bin\x86\Release\Content\ball.xnb
+C:\Users\stuart_\Desktop\PongWar V3\PongWar V2\PongWar\PongWar\PongWar\bin\x86\Release\Content\brick.xnb
+C:\Users\stuart_\Desktop\PongWar V3\PongWar V2\PongWar\PongWar\PongWar\bin\x86\Release\Content\paddle.xnb
+C:\Users\stuart_\Desktop\PongWar V3\PongWar V2\PongWar\PongWar\PongWar\bin\x86\Release\Content\background.xnb
+C:\Users\stuart_\Desktop\PongWar V3\PongWar V2\PongWar\PongWar\PongWar\bin\x86\Release\Content\scrollbackground.xnb
+C:\Users\stuart_\Desktop\PongWar V3\PongWar V2\PongWar\PongWar\PongWar\bin\x86\Release\Content\gameFont.xnb
+C:\Users\stuart_\Desktop\PongWar V3\PongWar V2\PongWar\PongWar\PongWar\bin\x86\Release\Content\deadlytechno.xnb
+C:\Users\stuart_\Desktop\PongWar V3\PongWar V2\PongWar\PongWar\PongWar\bin\x86\Release\Content\explosion.xnb
+C:\Users\stuart_\Desktop\PongWar V3\PongWar V2\PongWar\PongWar\PongWar\bin\x86\Release\Content\paddlePop.xnb
+C:\Users\stuart_\Desktop\PongWar V3\PongWar V2\PongWar\PongWar\PongWar\bin\x86\Release\Content\brickPop.xnb
+C:\Users\stuart_\Desktop\PongWar V3\PongWar V2\PongWar\PongWar\PongWar\bin\x86\Release\Content\brickPop2.xnb
+C:\Users\stuart_\Desktop\PongWar V3\PongWar V2\PongWar\PongWar\PongWar\bin\x86\Release\Content\brickPop3.xnb
+C:\Users\stuart_\Desktop\PongWar V3\PongWar V2\PongWar\PongWar\PongWar\bin\x86\Release\Content\deadlytechno.wma
+C:\Users\stuart_\Desktop\PongWar V3\PongWar V2\PongWar\PongWar\PongWar\bin\x86\Release\PongWar.exe
+C:\Users\stuart_\Desktop\PongWar V3\PongWar V2\PongWar\PongWar\PongWar\bin\x86\Release\PongWar.pdb
+C:\Users\stuart_\Desktop\PongWar V3\PongWar V2\PongWar\PongWar\PongWar\obj\x86\Release\Microsoft.Xna.Framework.RuntimeProfile.txt
+C:\Users\stuart_\Desktop\PongWar V3\PongWar V2\PongWar\PongWar\PongWar\obj\x86\Release\PongWar.exe
+C:\Users\stuart_\Desktop\PongWar V3\PongWar V2\PongWar\PongWar\PongWar\obj\x86\Release\PongWar.pdb
+C:\Users\mastr_000\Desktop\PongWar\PongWar\PongWar\obj\x86\Release\PongWar.exe
+C:\Users\mastr_000\Desktop\PongWar\PongWar\PongWar\obj\x86\Release\PongWar.pdb
+C:\Users\mastr_000\Desktop\PongWar\PongWar\PongWar\bin\x86\Release\Content\Images\ball.xnb
+C:\Users\mastr_000\Desktop\PongWar\PongWar\PongWar\bin\x86\Release\Content\Images\brick.xnb
+C:\Users\mastr_000\Desktop\PongWar\PongWar\PongWar\bin\x86\Release\Content\Images\background.xnb
+C:\Users\mastr_000\Desktop\PongWar\PongWar\PongWar\bin\x86\Release\Content\Images\PongWarIntro.xnb
+C:\Users\mastr_000\Desktop\PongWar\PongWar\PongWar\bin\x86\Release\Content\Images\gameResults.xnb
+C:\Users\mastr_000\Desktop\PongWar\PongWar\PongWar\bin\x86\Release\Content\Images\paddle.xnb
+C:\Users\mastr_000\Desktop\PongWar\PongWar\PongWar\bin\x86\Release\Content\gameFont.xnb
+C:\Users\mastr_000\Desktop\PongWar\PongWar\PongWar\bin\x86\Release\Content\Sounds\deadlytechno.xnb
+C:\Users\mastr_000\Desktop\PongWar\PongWar\PongWar\bin\x86\Release\Content\Sounds\explosion.xnb
+C:\Users\mastr_000\Desktop\PongWar\PongWar\PongWar\bin\x86\Release\Content\Sounds\paddlePop.xnb
+C:\Users\mastr_000\Desktop\PongWar\PongWar\PongWar\bin\x86\Release\Content\Sounds\brickPop.xnb
+C:\Users\mastr_000\Desktop\PongWar\PongWar\PongWar\bin\x86\Release\Content\Sounds\brickPop2.xnb
+C:\Users\mastr_000\Desktop\PongWar\PongWar\PongWar\bin\x86\Release\Content\Sounds\brickPop3.xnb
+C:\Users\mastr_000\Desktop\PongWar\PongWar\PongWar\bin\x86\Release\Content\Sounds\resetBall.xnb
+C:\Users\mastr_000\Desktop\PongWar\PongWar\PongWar\bin\x86\Release\Content\Sounds\deadlytechno.wma
+C:\Users\mastr_000\Desktop\PongWar\PongWar\PongWar\bin\x86\Release\PongWar.exe
+C:\Users\mastr_000\Desktop\PongWar\PongWar\PongWar\bin\x86\Release\PongWar.pdb
+C:\Users\mastr_000\Desktop\PongWar\PongWar\PongWar\obj\x86\Release\PongWar.csprojResolveAssemblyReference.cache
+C:\Users\mastr_000\Desktop\PongWar\PongWar\PongWar\obj\x86\Release\Microsoft.Xna.Framework.RuntimeProfile.txt
+C:\Users\mastr_000\Desktop\PongWar\PongWar\PongWar\bin\x86\Release\Content\Images\lifeHeart.xnb
+C:\Users\mastr_000\Desktop\PongWar\PongWar\PongWar\bin\x86\Release\Content\Images\empty.xnb

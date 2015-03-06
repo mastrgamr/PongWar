@@ -1,0 +1,8 @@
+c:\users\ppark\documents\visual studio 2012\Projects\PongWar\PongWar\PongWarContent\obj\x86\Debug\PongWarContent.contentprojResolveAssemblyReference.cache
+C:\Users\ppark\Desktop\Projects\PongWar V1\PongWar\PongWar\PongWarContent\obj\x86\Debug\PongWarContent.contentprojResolveAssemblyReference.cache
+C:\Users\ppark\Desktop\Projects\PongWar V2\PongWar\PongWar\PongWarContent\obj\x86\Debug\PongWarContent.contentprojResolveAssemblyReference.cache
+C:\Users\ppark\Desktop\Projects\PongWar V2\PongWar V2\PongWar\PongWar\PongWarContent\obj\x86\Debug\PongWarContent.contentprojResolveAssemblyReference.cache
+C:\Users\stuart_\Desktop\PongWar V3\PongWar V2\PongWar\PongWar\PongWarContent\obj\x86\Debug\PongWarContent.contentprojResolveAssemblyReference.cache
+C:\Users\mastr_000\Desktop\PongWar\PongWar\PongWarContent\obj\x86\Debug\PongWarContent.contentprojResolveAssemblyReference.cache
+C:\Users\mastr_000\Dropbox\Public\workspace\PongWar\PongWar\PongWarContent\obj\x86\Debug\PongWarContent.contentprojResolveAssemblyReference.cache
+C:\Users\stuart_\Dropbox\Public\workspace\PongWar\PongWar\PongWarContent\obj\x86\Debug\PongWarContent.contentprojResolveAssemblyReference.cache

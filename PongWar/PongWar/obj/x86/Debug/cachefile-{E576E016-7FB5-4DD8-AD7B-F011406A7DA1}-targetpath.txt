@@ -1,0 +1,17 @@
+Content\Images\ball.xnb
+Content\Images\brick.xnb
+Content\Images\background.xnb
+Content\Images\PongWarIntro.xnb
+Content\Images\gameResults.xnb
+Content\Images\paddle.xnb
+Content\Images\lifeHeart.xnb
+Content\Images\empty.xnb
+Content\gameFont.xnb
+Content\Sounds\deadlytechno.xnb
+Content\Sounds\deadlytechno.wma
+Content\Sounds\explosion.xnb
+Content\Sounds\paddlePop.xnb
+Content\Sounds\brickPop.xnb
+Content\Sounds\brickPop2.xnb
+Content\Sounds\brickPop3.xnb
+Content\Sounds\resetBall.xnb

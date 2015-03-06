@@ -1,0 +1,24 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Express 2012 for Windows Desktop
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PongWar", "PongWar\PongWar\PongWar.csproj", "{22020659-15B2-49AD-BF58-479571E72182}"
+EndProject
+Project("{96E2B04D-8817-42C6-938A-82C39BA4D311}") = "PongWarContent", "PongWar\PongWarContent\PongWarContent.contentproj", "{E576E016-7FB5-4DD8-AD7B-F011406A7DA1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{22020659-15B2-49AD-BF58-479571E72182}.Debug|x86.ActiveCfg = Debug|x86
+		{22020659-15B2-49AD-BF58-479571E72182}.Debug|x86.Build.0 = Debug|x86
+		{22020659-15B2-49AD-BF58-479571E72182}.Release|x86.ActiveCfg = Release|x86
+		{22020659-15B2-49AD-BF58-479571E72182}.Release|x86.Build.0 = Release|x86
+		{E576E016-7FB5-4DD8-AD7B-F011406A7DA1}.Debug|x86.ActiveCfg = Debug|x86
+		{E576E016-7FB5-4DD8-AD7B-F011406A7DA1}.Release|x86.ActiveCfg = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
