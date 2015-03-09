@@ -20,6 +20,14 @@ namespace PongWar
         Texture2D texture;
         Rectangle screenBounds;
         int startposition;
+
+        public Vector2 Position
+        {
+            get
+            {
+                return position;
+            }
+        }
         
         public Paddle(Texture2D texture, Rectangle screenBounds, int startposition)
         {

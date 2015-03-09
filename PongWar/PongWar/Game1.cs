@@ -32,23 +32,29 @@ namespace PongWar
         }
         GameState currentState;
 
-        ScoreAnimator scoreAnimator;
+        Animator scoreAnimator;
+        Animator losingAnimator1;
+        Animator losingAnimator2;
         Ball ball1;
         Ball ball2;
         Paddle paddle1;
         Paddle paddle2;
         Rectangle screenRectangle;
+        float RotationAngle;
 
         TimeSpan tSpan = TimeSpan.FromSeconds(1);
     
         const int BRICKS_WIDE = 6;
         const int BRICKS_HIGH = 9;
         int totalbricks;
-        int life = 10;
+        int lives = 4;
+        int lifeLeft1 = 4;
+        int lifeLeft2 = 4;
 
         Texture2D brickImage;
         Texture2D texturebackground;
         Texture2D introPane;
+        Texture2D caution;
         Texture2D gameResults;
         Rectangle gameResultRect;
         Texture2D[] lifeHeartsP1;
@@ -90,12 +96,17 @@ namespace PongWar
                 graphics.PreferredBackBufferHeight);
             graphics.IsFullScreen = false;
             graphics.ApplyChanges();
-            Window.Title = "Pong War v0.8";
+            Window.Title = "Pong War v1.0";
 
-            scoreAnimator = new ScoreAnimator();
-            Ball.totallife1 = Ball.totallife2 = life;
-            lifeHeartsP1 = new Texture2D[life];
-            lifeHeartsP2 = new Texture2D[life];
+            scoreAnimator = new Animator();
+            scoreAnimator.AnimationProperty = Animation.FADEUP;
+            losingAnimator1 = new Animator();
+            losingAnimator1.AnimationProperty = Animation.PULSEFADE;
+            losingAnimator2 = new Animator();
+            losingAnimator2.AnimationProperty = Animation.PULSEFADE;
+            Ball.totallife1 = Ball.totallife2 = lives;
+            lifeHeartsP1 = new Texture2D[lives];
+            lifeHeartsP2 = new Texture2D[lives];
             
             base.Initialize();
         }
@@ -123,6 +134,7 @@ namespace PongWar
             texturebackground = Content.Load<Texture2D>("Images//background");
             
             introPane = Content.Load<Texture2D>("Images//PongWarIntro");
+            caution = Content.Load<Texture2D>("Images//caution");
 
             for (int i = 0; i < lifeHeartsP1.Length; i++)
             {
@@ -135,7 +147,7 @@ namespace PongWar
             paddle1 = new Paddle(tempTexture, screenRectangle, 15);
             paddle2 = new Paddle(tempTexture, screenRectangle, (screenRectangle.Width - tempTexture.Width) - 15);
 
-            tempTexture = Content.Load<Texture2D>("Images//ball");
+            tempTexture = Content.Load<Texture2D>("Images//ball1");
             ball1 = new Ball(tempTexture, screenRectangle, Color.White);
             ball2 = new Ball(tempTexture, screenRectangle, Color.White);
 
@@ -213,8 +225,22 @@ namespace PongWar
             // Load Song
             if (!songstart)
             {
+                MediaPlayer.Volume = 0.4f; // Background song volume control
                 //MediaPlayer.Play(deadlytechno);
                 songstart = true;
+            }
+
+            if (currentState == GameState.GAMEOVER)
+            {
+                if (Keyboard.GetState().IsKeyDown(Keys.Y))
+                {
+                    currentState = GameState.PLAYING;
+                    StartGame();
+                }
+                else if (Keyboard.GetState().IsKeyDown(Keys.N))
+                {
+                    this.Exit();
+                }
             }
 
             // Allows the game to exit
@@ -233,10 +259,7 @@ namespace PongWar
             // Allows game to pause and exit with Escape key
             if (Keyboard.GetState().IsKeyDown(Keys.P)) 
             {
-                if (currentState == GameState.PLAYING)
-                    currentState = GameState.PAUSED;
-                else
-                    currentState = GameState.PLAYING;
+                currentState = (currentState == GameState.PLAYING) ? GameState.PAUSED : GameState.PLAYING;
             }
 
             if (currentState != GameState.PLAYING)
@@ -257,6 +280,8 @@ namespace PongWar
                     {
                         bricks[i, j].IsAlive = false;
                         totalbricks -= 1;
+                        scoreAnimator = new Animator();
+                        scoreAnimator.AnimationProperty = Animation.FADEUP;
                         scoreAnimator.Position = new Vector2(bricks[i,j].Location.X, bricks[i,j].Location.Y);
 
                         if (bricks[i, j].Tint == Color.Red)
@@ -293,6 +318,8 @@ namespace PongWar
             }
 
             scoreAnimator.Update(gameTime);
+            losingAnimator1.Update(gameTime);
+            losingAnimator2.Update(gameTime);
 
             if (totalbricks == 0) // If there are no more bricks game is over
             {
@@ -313,12 +340,21 @@ namespace PongWar
 
             ball1.PaddleCollision(paddle1.GetBounds());
             ball2.PaddleCollision(paddle2.GetBounds());
-            if(ball1.PaddleCollided || ball2.PaddleCollided)
+            if (ball1.PaddleCollided)
             {
+                ball1.BallAngleUpdate(paddle1.GetBounds());
                 paddleHit.Play();
                 ball1.PaddleCollided = false;
+            }
+            else if (ball2.PaddleCollided)
+            {
+                ball2.BallAngleUpdate(paddle2.GetBounds());
+                paddleHit.Play();
                 ball2.PaddleCollided = false;
             }
+
+            // Ball Rotation 
+            RotationAngle += (float)gameTime.ElapsedGameTime.TotalSeconds * 6;
 
             #region Reset Ball
             if (ball1.Position.X < 0 || ball1.Position.X > Window.ClientBounds.Width)
@@ -327,6 +363,7 @@ namespace PongWar
                 if (tSpan < TimeSpan.Zero)
                 {
                     resetBall.Play();
+                    lifeLeft1 -= 1;
                     ball1.SetInStartPosition(paddle1.GetBounds(), 1);
                     lifeHeartsP1[Ball.totallife1 - 1] = Content.Load<Texture2D>("Images//empty");
                     Ball.totallife1 -= 1;
@@ -339,6 +376,7 @@ namespace PongWar
                 if (tSpan < TimeSpan.Zero)
                 {
                     resetBall.Play();
+                    lifeLeft2 = 1;
                     ball2.SetInStartPosition(paddle2.GetBounds(), 2);
                     lifeHeartsP2[Ball.totallife2 - 1] = Content.Load<Texture2D>("Images//empty");
                     Ball.totallife2 -= 1;
@@ -375,27 +413,37 @@ namespace PongWar
                 scoreAnimator.Draw(spriteBatch, font, "10");
                 paddle1.Draw(spriteBatch);
                 paddle2.Draw(spriteBatch);
-                ball1.Draw(spriteBatch);
-                ball2.Draw(spriteBatch);
+                ball1.Draw(spriteBatch, RotationAngle);
+                ball2.Draw(spriteBatch, RotationAngle);
 
                 spriteBatch.DrawString(font, "Player 1: " + Brick.totalscore1, new Vector2(GraphicsDevice.Viewport.TitleSafeArea.X, GraphicsDevice.Viewport.TitleSafeArea.Y + 5), Color.White);
                 spriteBatch.DrawString(font, "Player 2: " + Brick.totalscore2, new Vector2(GraphicsDevice.Viewport.TitleSafeArea.X + 630, GraphicsDevice.Viewport.TitleSafeArea.Y + 5), Color.White);
 
                 float anotherLife = GraphicsDevice.Viewport.TitleSafeArea.X;
-                for (int i = 0; i < life; i++)
+                for (int i = 0; i < lives; i++)
                 {
                     spriteBatch.Draw(lifeHeartsP1[i], new Vector2(anotherLife, screenHeight - 50),
-                        null, Color.White, 0f, Vector2.Zero, .25f, SpriteEffects.None, 0);
+                        null, Color.White, 0f, Vector2.Zero, .15f, SpriteEffects.None, 0);
                     spriteBatch.Draw(lifeHeartsP2[i], new Vector2(anotherLife + 630, screenHeight - 50),
-                        null, Color.White, 0f, Vector2.Zero, .25f, SpriteEffects.None, 0);
+                        null, Color.White, 0f, Vector2.Zero, .15f, SpriteEffects.None, 0);
 
-                    anotherLife += 40;
+                    anotherLife += 25;
+                }
+
+                if (lifeLeft1 <= 3)
+                {
+                    losingAnimator1.Draw(spriteBatch, new Vector2(screenWidth / 4 - 50, screenHeight / 2 - 50), caution);
+                }
+                if (lifeLeft2 <= 3)
+                {
+                    losingAnimator2.Draw(spriteBatch, new Vector2((screenWidth - 100) - 100, screenHeight / 2 - 50), caution);
                 }
             }
 
             if (currentState == GameState.GAMEOVER) // Check if the game is over and display final message
             {
                 spriteBatch.Draw(gameResults, new Vector2((screenWidth / 2 - gameResultRect.Width / 2), (screenHeight / 2 - gameResultRect.Height / 2)), gameResultRect, Color.White);
+                spriteBatch.DrawString(font, "Play Again? (Y/N)", new Vector2((screenWidth / 2 - gameResultRect.Width / 2), (screenHeight / 2 - gameResultRect.Height / 2) + 100), Color.White);
             }
             
             spriteBatch.End();

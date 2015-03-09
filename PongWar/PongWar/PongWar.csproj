@@ -78,7 +78,7 @@
     <Compile Include="Paddle.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Program.cs" />
-    <Compile Include="ScoreAnimator.cs" />
+    <Compile Include="Animator.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Game.ico" />

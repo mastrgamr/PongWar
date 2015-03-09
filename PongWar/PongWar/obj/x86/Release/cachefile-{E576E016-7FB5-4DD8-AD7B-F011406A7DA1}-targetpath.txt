@@ -4,6 +4,9 @@ Content\Images\background.xnb
 Content\Images\PongWarIntro.xnb
 Content\Images\gameResults.xnb
 Content\Images\paddle.xnb
+Content\Images\lifeHeart.xnb
+Content\Images\empty.xnb
+Content\Images\ball1.xnb
 Content\gameFont.xnb
 Content\Sounds\deadlytechno.xnb
 Content\Sounds\deadlytechno.wma
@@ -13,5 +16,4 @@ Content\Sounds\brickPop.xnb
 Content\Sounds\brickPop2.xnb
 Content\Sounds\brickPop3.xnb
 Content\Sounds\resetBall.xnb
-Content\Images\lifeHeart.xnb
-Content\Images\empty.xnb
+Content\Images\caution.xnb

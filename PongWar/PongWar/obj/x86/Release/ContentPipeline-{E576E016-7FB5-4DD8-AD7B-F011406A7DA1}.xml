@@ -7,8 +7,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\mastr_000\Desktop\PongWar\PongWar\PongWar\bin\x86\Release\Content\Images\ball.xnb</Output>
-      <Time>2015-02-28T23:18:08.4427474-05:00</Time>
+      <Output>C:\Users\mastr_000\Dropbox\Public\workspace\PongWar\PongWar\PongWar\bin\x86\Release\Content\Images\ball.xnb</Output>
+      <Time>2015-02-28T23:18:08-05:00</Time>
     </Item>
     <Item>
       <Source>Images\brick.png</Source>
@@ -16,8 +16,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\mastr_000\Desktop\PongWar\PongWar\PongWar\bin\x86\Release\Content\Images\brick.xnb</Output>
-      <Time>2015-02-28T23:18:08.4697654-05:00</Time>
+      <Output>C:\Users\mastr_000\Dropbox\Public\workspace\PongWar\PongWar\PongWar\bin\x86\Release\Content\Images\brick.xnb</Output>
+      <Time>2015-02-28T23:18:08-05:00</Time>
     </Item>
     <Item>
       <Source>Images\background.png</Source>
@@ -25,8 +25,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\mastr_000\Desktop\PongWar\PongWar\PongWar\bin\x86\Release\Content\Images\background.xnb</Output>
-      <Time>2015-02-28T23:18:08.4137275-05:00</Time>
+      <Output>C:\Users\mastr_000\Dropbox\Public\workspace\PongWar\PongWar\PongWar\bin\x86\Release\Content\Images\background.xnb</Output>
+      <Time>2015-02-28T23:18:08-05:00</Time>
     </Item>
     <Item>
       <Source>Images\PongWarIntro.png</Source>
@@ -34,8 +34,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\mastr_000\Desktop\PongWar\PongWar\PongWar\bin\x86\Release\Content\Images\PongWarIntro.xnb</Output>
-      <Time>2015-03-05T13:38:06.1031079-05:00</Time>
+      <Output>C:\Users\mastr_000\Dropbox\Public\workspace\PongWar\PongWar\PongWar\bin\x86\Release\Content\Images\PongWarIntro.xnb</Output>
+      <Time>2015-03-05T13:38:06-05:00</Time>
     </Item>
     <Item>
       <Source>Images\gameResults.png</Source>
@@ -43,8 +43,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\mastr_000\Desktop\PongWar\PongWar\PongWar\bin\x86\Release\Content\Images\gameResults.xnb</Output>
-      <Time>2015-03-05T14:20:22.9499003-05:00</Time>
+      <Output>C:\Users\mastr_000\Dropbox\Public\workspace\PongWar\PongWar\PongWar\bin\x86\Release\Content\Images\gameResults.xnb</Output>
+      <Time>2015-03-05T14:20:22-05:00</Time>
     </Item>
     <Item>
       <Source>Images\paddle.jpg</Source>
@@ -52,8 +52,35 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\mastr_000\Desktop\PongWar\PongWar\PongWar\bin\x86\Release\Content\Images\paddle.xnb</Output>
-      <Time>2015-03-05T14:51:08.9261361-05:00</Time>
+      <Output>C:\Users\mastr_000\Dropbox\Public\workspace\PongWar\PongWar\PongWar\bin\x86\Release\Content\Images\paddle.xnb</Output>
+      <Time>2015-03-05T14:51:08-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Images\lifeHeart.png</Source>
+      <Name>Images\lifeHeart</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\mastr_000\Dropbox\Public\workspace\PongWar\PongWar\PongWar\bin\x86\Release\Content\Images\lifeHeart.xnb</Output>
+      <Time>2015-03-05T16:11:17-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Images\empty.jpg</Source>
+      <Name>Images\empty</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\mastr_000\Dropbox\Public\workspace\PongWar\PongWar\PongWar\bin\x86\Release\Content\Images\empty.xnb</Output>
+      <Time>2015-03-05T17:03:53-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Images\ball1.png</Source>
+      <Name>Images\ball1</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\mastr_000\Dropbox\Public\workspace\PongWar\PongWar\PongWar\bin\x86\Release\Content\Images\ball1.xnb</Output>
+      <Time>2015-03-08T17:16:37-04:00</Time>
     </Item>
     <Item>
       <Source>gameFont.spritefont</Source>
@@ -61,7 +88,7 @@
       <Importer>FontDescriptionImporter</Importer>
       <Processor>FontDescriptionProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\mastr_000\Desktop\PongWar\PongWar\PongWar\bin\x86\Release\Content\gameFont.xnb</Output>
+      <Output>C:\Users\mastr_000\Dropbox\Public\workspace\PongWar\PongWar\PongWar\bin\x86\Release\Content\gameFont.xnb</Output>
       <Time>2015-02-28T23:18:08.9921143-05:00</Time>
     </Item>
     <Item>
@@ -70,8 +97,8 @@
       <Importer>Mp3Importer</Importer>
       <Processor>SongProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\mastr_000\Desktop\PongWar\PongWar\PongWar\bin\x86\Release\Content\Sounds\deadlytechno.xnb</Output>
-      <Extra>C:\Users\mastr_000\Desktop\PongWar\PongWar\PongWar\bin\x86\Release\Content\Sounds\deadlytechno.wma</Extra>
+      <Output>C:\Users\mastr_000\Dropbox\Public\workspace\PongWar\PongWar\PongWar\bin\x86\Release\Content\Sounds\deadlytechno.xnb</Output>
+      <Extra>C:\Users\mastr_000\Dropbox\Public\workspace\PongWar\PongWar\PongWar\bin\x86\Release\Content\Sounds\deadlytechno.wma</Extra>
       <Time>2015-02-28T23:18:08.9060562-05:00</Time>
     </Item>
     <Item>
@@ -80,7 +107,7 @@
       <Importer>WavImporter</Importer>
       <Processor>SoundEffectProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\mastr_000\Desktop\PongWar\PongWar\PongWar\bin\x86\Release\Content\Sounds\explosion.xnb</Output>
+      <Output>C:\Users\mastr_000\Dropbox\Public\workspace\PongWar\PongWar\PongWar\bin\x86\Release\Content\Sounds\explosion.xnb</Output>
       <Time>2015-02-28T23:18:08.9430815-05:00</Time>
     </Item>
     <Item>
@@ -89,7 +116,7 @@
       <Importer>WavImporter</Importer>
       <Processor>SoundEffectProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\mastr_000\Desktop\PongWar\PongWar\PongWar\bin\x86\Release\Content\Sounds\paddlePop.xnb</Output>
+      <Output>C:\Users\mastr_000\Dropbox\Public\workspace\PongWar\PongWar\PongWar\bin\x86\Release\Content\Sounds\paddlePop.xnb</Output>
       <Time>2015-03-01T16:51:29.4156291-05:00</Time>
     </Item>
     <Item>
@@ -98,7 +125,7 @@
       <Importer>WavImporter</Importer>
       <Processor>SoundEffectProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\mastr_000\Desktop\PongWar\PongWar\PongWar\bin\x86\Release\Content\Sounds\brickPop.xnb</Output>
+      <Output>C:\Users\mastr_000\Dropbox\Public\workspace\PongWar\PongWar\PongWar\bin\x86\Release\Content\Sounds\brickPop.xnb</Output>
       <Time>2015-03-01T17:07:34.3432348-05:00</Time>
     </Item>
     <Item>
@@ -107,7 +134,7 @@
       <Importer>WavImporter</Importer>
       <Processor>SoundEffectProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\mastr_000\Desktop\PongWar\PongWar\PongWar\bin\x86\Release\Content\Sounds\brickPop2.xnb</Output>
+      <Output>C:\Users\mastr_000\Dropbox\Public\workspace\PongWar\PongWar\PongWar\bin\x86\Release\Content\Sounds\brickPop2.xnb</Output>
       <Time>2015-03-02T16:23:19.1860511-05:00</Time>
     </Item>
     <Item>
@@ -116,7 +143,7 @@
       <Importer>WavImporter</Importer>
       <Processor>SoundEffectProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\mastr_000\Desktop\PongWar\PongWar\PongWar\bin\x86\Release\Content\Sounds\brickPop3.xnb</Output>
+      <Output>C:\Users\mastr_000\Dropbox\Public\workspace\PongWar\PongWar\PongWar\bin\x86\Release\Content\Sounds\brickPop3.xnb</Output>
       <Time>2015-03-02T16:23:19.1770411-05:00</Time>
     </Item>
     <Item>
@@ -125,26 +152,17 @@
       <Importer>WavImporter</Importer>
       <Processor>SoundEffectProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\mastr_000\Desktop\PongWar\PongWar\PongWar\bin\x86\Release\Content\Sounds\resetBall.xnb</Output>
+      <Output>C:\Users\mastr_000\Dropbox\Public\workspace\PongWar\PongWar\PongWar\bin\x86\Release\Content\Sounds\resetBall.xnb</Output>
       <Time>2015-03-05T15:12:48.9762929-05:00</Time>
     </Item>
     <Item>
-      <Source>Images\lifeHeart.png</Source>
-      <Name>Images\lifeHeart</Name>
+      <Source>Images\caution.png</Source>
+      <Name>Images\caution</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\mastr_000\Desktop\PongWar\PongWar\PongWar\bin\x86\Release\Content\Images\lifeHeart.xnb</Output>
-      <Time>2015-03-05T16:11:17.2310362-05:00</Time>
-    </Item>
-    <Item>
-      <Source>Images\empty.jpg</Source>
-      <Name>Images\empty</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\mastr_000\Desktop\PongWar\PongWar\PongWar\bin\x86\Release\Content\Images\empty.xnb</Output>
-      <Time>2015-03-05T17:03:53.4883355-05:00</Time>
+      <Output>C:\Users\mastr_000\Dropbox\Public\workspace\PongWar\PongWar\PongWar\bin\x86\Release\Content\Images\caution.xnb</Output>
+      <Time>2015-03-09T14:52:35-04:00</Time>
     </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>
@@ -153,10 +171,10 @@
       <TargetProfile>Reach</TargetProfile>
       <BuildConfiguration>Release</BuildConfiguration>
       <CompressContent>true</CompressContent>
-      <RootDirectory>C:\Users\mastr_000\Desktop\PongWar\PongWar\PongWarContent\</RootDirectory>
-      <LoggerRootDirectory>C:\Users\mastr_000\Desktop\PongWar\PongWar\PongWar\</LoggerRootDirectory>
-      <IntermediateDirectory>C:\Users\mastr_000\Desktop\PongWar\PongWar\PongWar\obj\x86\Release\</IntermediateDirectory>
-      <OutputDirectory>C:\Users\mastr_000\Desktop\PongWar\PongWar\PongWar\bin\x86\Release\Content\</OutputDirectory>
+      <RootDirectory>C:\Users\mastr_000\Dropbox\Public\workspace\PongWar\PongWar\PongWarContent\</RootDirectory>
+      <LoggerRootDirectory>C:\Users\mastr_000\Dropbox\Public\workspace\PongWar\PongWar\PongWar\</LoggerRootDirectory>
+      <IntermediateDirectory>C:\Users\mastr_000\Dropbox\Public\workspace\PongWar\PongWar\PongWar\obj\x86\Release\</IntermediateDirectory>
+      <OutputDirectory>C:\Users\mastr_000\Dropbox\Public\workspace\PongWar\PongWar\PongWar\bin\x86\Release\Content\</OutputDirectory>
     </Settings>
     <Assemblies>
       <Assembly>
